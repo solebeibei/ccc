@@ -15,6 +15,11 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
+
+    /** 选择所有的用户
+     *
+     * @return
+     */
     @Override
     public List<User> selectAllUser() {
       return  userDao.selectAllList();
