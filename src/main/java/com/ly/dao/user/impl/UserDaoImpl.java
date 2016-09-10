@@ -36,4 +36,9 @@ public class UserDaoImpl extends GenericBaseDAOImpl implements UserDao {
     public List<User> selectAllList() {
        return  this.executeForObjectList("userMapper.selectAll");
     }
+
+    @Override
+    public int selectUser(User user) {
+     return  this.executeForObject("userMapper.selectByUser",user,Integer.class);
+    }
 }

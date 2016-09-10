@@ -42,4 +42,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+    <welcome-file-list>
+        <welcome-file>pages/index.vm</welcome-file>
+    </welcome-file-list>
 </web-app>

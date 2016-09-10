@@ -4,7 +4,7 @@ package bean;
  * Created by liyang21 on 2016/9/3.
  */
 public class User {
-    int age;
+    public int age;
 
     public int getAge() {
         return age;
@@ -22,8 +22,9 @@ public class User {
         this.name = name;
     }
 
-    String name;
-    public void print(){
-        System.out.println("The name,"+name+"The age,"+age);
+    public String name;
+
+    public void print() {
+        System.out.println("The name," + name + "The age," + age);
     }
 }

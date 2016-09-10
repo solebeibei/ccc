@@ -8,5 +8,6 @@ import java.util.List;
  * Created by liyang21 on 2016/9/4.
  */
 public interface UserService {
-     List<User> selectAllUser();
+     public  List<User> selectAllUser();
+     public int selectUser(User user);
 }

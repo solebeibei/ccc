@@ -24,4 +24,7 @@ public class UserServiceImpl implements UserService {
     public List<User> selectAllUser() {
       return  userDao.selectAllList();
     }
+    public int selectUser(User user){
+        return  userDao.selectUser(user);
+    }
 }

@@ -33,4 +33,7 @@
     <select id="selectAll" resultMap="BaseResultMap">
         SELECT  age,name  from  users
     </select>
+    <select id="selectByUser" parameterType="bean.User"  resultType="java.lang.Integer">
+        select  count(*) from users WHERE name=#{name} AND  age=#{age}
+    </select>
 </mapper>
